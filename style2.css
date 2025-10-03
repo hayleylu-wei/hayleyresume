@@ -1289,10 +1289,13 @@ html {
 
 /* 標題與分隔線微調 */
 .sub-block .panel-text h2{
-    margin: 0 0 10px 0;
-    font-size: 1.1rem;
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 6px;
+    /* 更大、更醒目的子區塊標題（桌機、平板、手機皆適配） */
+    margin: 0 0 12px 0;
+    font-size: clamp(1.6rem, 2.1vw, 2.2rem);
+    line-height: 1.25;
+    font-weight: 800;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 8px;
 }
 
 @media (max-width: 992px){
@@ -1336,6 +1339,8 @@ html {
     color: #111;
     font-weight: 700;
     margin: 10px 0 4px;
+
+    font-size: 1.1rem;
 }
 
 
